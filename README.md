@@ -4,7 +4,7 @@
 
 </br>
 <div>
-  <h2><strong>📱 Animação Celular</strong></h2>
+  <h2><strong>📱 Animação "Celular interativo: tempo, notificação e vibração"</strong></h2>
 </div>
 
 <div align="justify">
@@ -16,6 +16,8 @@ Este projeto foi realizado no curso superior de Desenvolvimento de Sistemas Mult
 ### 📋 Visão Geral
   
 O objetivo primordial deste projeto foi criar uma animação utilizando HTML e CSS no codepen.io. Esta iniciativa visava não apenas demonstrar os conceitos absorvidos ao longo das aulas de CSS avançado, mas também aprimorar habilidades práticas na implementação desses conhecimentos.
+
+A animação apresenta um celular que exibe a passagem do tempo, seguido pela exibição de uma notificação que induz o dispositivo a vibrar. Para aumentar o dinamismo, as bordas da tela destacam-se com um efeito RGB, enfatizando a simulação da chegada da notificação.
 <div>
 </div>
 
