@@ -1,306 +1,315 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação Celular</title>
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação Celular</title>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.2/css/all.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-        .display {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    .display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-        .celular {
-            background: url(https://i.pinimg.com/564x/e6/c0/91/e6c091ab1c87efd5bd68b7735572064a.jpg);
-            background-size: 325px;
-            height: 550px;
-            width: 260px;
-            border: 10px solid #1b1b1b;
-            border-radius: 45px;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            font-family: Poppins;
-            display: flex;
-            overflow: hidden;
-        }
+    .celular {
+      background: url(https://i.pinimg.com/564x/e6/c0/91/e6c091ab1c87efd5bd68b7735572064a.jpg);
+      background-size: 325px;
+      height: 550px;
+      width: 260px;
+      border: 10px solid #1b1b1b;
+      border-radius: 45px;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      font-family: Poppins;
+      display: flex;
+      overflow: hidden;
+    }
 
-        .borda {
-            height: 540px;
-            width: 96%;
-            border-radius: 35px;
-            align-items: center;
-            justify-content: center;
-            padding: 4px;
-        }
+    .borda {
+      height: 540px;
+      width: 96%;
+      border-radius: 35px;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+    }
 
-        .direita {
-            display: flex;
-            width: 100%;
-            margin-top: 5px;
-            color: white;
-            gap: 5px;
-            align-items: center;
-            font-size: 12px;
-            padding-left: 15px;
-        }
+    .direita {
+      display: flex;
+      width: 100%;
+      margin-top: 5px;
+      color: white;
+      gap: 5px;
+      align-items: center;
+      font-size: 12px;
+      padding-left: 15px;
+    }
 
-        .camera {
-            height: 20px;
-            width: 20px;
-            border-radius: 50px;
-            margin-left: 210px;
-            margin-top: 10px;
-            background-color: #161616;
-            border: 3px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-        }
+    .camera {
+      height: 20px;
+      width: 20px;
+      border-radius: 50px;
+      margin-left: 210px;
+      margin-top: 10px;
+      background-color: #161616;
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
 
-        .camera2 {
-            padding: 5px;
-            border-radius: 50px;
-            background-color: #1f1f1f;
-            border: 3px solid black;
-        }
+    .camera2 {
+      padding: 5px;
+      border-radius: 50px;
+      background-color: #1f1f1f;
+      border: 3px solid black;
+    }
 
-        .tela {
-            background: url(https://i.pinimg.com/564x/e6/c0/91/e6c091ab1c87efd5bd68b7735572064a.jpg);
-            background-size: 325px;
-            height: 100%;
-            border-radius: 32px;
-            font-family: Poppins;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
+    .tela {
+      background: url(https://i.pinimg.com/564x/e6/c0/91/e6c091ab1c87efd5bd68b7735572064a.jpg);
+      background-size: 325px;
+      height: 100%;
+      border-radius: 32px;
+      font-family: Poppins;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
 
-        .horario {
-            margin-top: 80px;
-            text-align: center;
-            font-size: 50px;
-            color: white;
-            font-weight: bold;
-        }
+    .horario {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 50px;
+      color: white;
+      font-weight: bold;
+    }
 
-        .data {
-            font-size: 14px;
-            margin: -10px 0 15px;
-            text-align: center;
-            color: white;
-        }
+    .data {
+      font-size: 14px;
+      margin: -10px 0 15px;
+      text-align: center;
+      color: white;
+    }
 
-        .notificacao {
-            border-radius: 18px;
-            margin: 10px 10px;
-            background-color: rgba(0, 0, 0, 0.2);
-            color: white;
-            padding: 8px 15px;
-            text-align: justify;
-            align-items: center;
-            display: none;
-            gap: 10px;
-        }
+    .notificacao {
+      border-radius: 18px;
+      margin: 10px 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: white;
+      padding: 8px 15px;
+      text-align: justify;
+      align-items: center;
+      display: none;
+      gap: 10px;
+    }
 
-        .icones {
-            display: flex;
-            margin-top: 249px;
-            height: 6vh;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 12px;
-        }
+    .icones {
+      display: flex;
+      margin-top: 249px;
+      height: 6vh;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+    }
 
-        .icone {
-            background-color: #9999996b;
-            color: white;
-            padding: 4px 8px;
-            text-align: center;
-            border-radius: 14px;
-        }
+    .icone {
+      background-color: #9999996b;
+      color: white;
+      padding: 4px 8px;
+      text-align: center;
+      border-radius: 14px;
+    }
 
-        .app {
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            align-items: end;
-        }
+    .app {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      align-items: end;
+    }
 
-        .mensagem {
-            display: flex;
-            flex-direction: column;
-        }
+    .mensagem {
+      display: flex;
+      flex-direction: column;
+    }
 
-        p {
-            font-size: 12px;
-            font-weight: 300;
-        }
+    p {
+      font-size: 12px;
+      font-weight: 300;
+    }
 
-        @keyframes vibrar {
-            0% {
-                transform: translateX(0);
-            }
+    @keyframes vibrar {
+      0% {
+        transform: translateX(0);
+      }
 
-            25% {
-                transform: translateX(-1px) rotate(-1deg);
-            }
+      25% {
+        transform: translateX(-1px) rotate(-1deg);
+      }
 
-            50% {
-                transform: translateX(1px) rotate(1deg);
-            }
+      50% {
+        transform: translateX(1px) rotate(1deg);
+      }
 
-            75% {
-                transform: translateX(-1px) rotate(-1deg);
-            }
+      75% {
+        transform: translateX(-1px) rotate(-1deg);
+      }
 
-            100% {
-                transform: translateX(0);
-            }
-        }
+      100% {
+        transform: translateX(0);
+      }
+    }
 
-        @keyframes animacaoBorda {
-            0% {
-                background-image: linear-gradient(to top,
-                        #0070ff,
-                        #007fff,
-                        #0094ff,
-                        #00a1ff,
-                        #00bbff,
-                        #5ed0ff,
-                        #8dd8ff);
-            }
+    @keyframes animacaoBorda {
+      0% {
+        background-image: linear-gradient(to top,
+            #0070ff,
+            #007fff,
+            #0094ff,
+            #00a1ff,
+            #00bbff,
+            #5ed0ff,
+            #8dd8ff);
+      }
 
-            20% {
-                background-image: linear-gradient(to top,
-                        #8dd8ff,
-                        #5ed0ff,
-                        #00bbff,
-                        #00a1ff,
-                        #0094ff,
-                        #007fff,
-                        #0070ff);
-            }
+      20% {
+        background-image: linear-gradient(to top,
+            #8dd8ff,
+            #5ed0ff,
+            #00bbff,
+            #00a1ff,
+            #0094ff,
+            #007fff,
+            #0070ff);
+      }
 
-            40% {
-                background-image: linear-gradient(to top,
-                        #5ed0ff,
-                        #00bbff,
-                        #00a1ff,
-                        #0094ff,
-                        #007fff,
-                        #0070ff,
-                        #8dd8ff);
-            }
+      40% {
+        background-image: linear-gradient(to top,
+            #5ed0ff,
+            #00bbff,
+            #00a1ff,
+            #0094ff,
+            #007fff,
+            #0070ff,
+            #8dd8ff);
+      }
 
-            60% {
-                background-image: linear-gradient(to top,
-                        #00bbff,
-                        #00a1ff,
-                        #0094ff,
-                        #007fff,
-                        #0070ff,
-                        #8dd8ff,
-                        #5ed0ff);
-            }
+      60% {
+        background-image: linear-gradient(to top,
+            #00bbff,
+            #00a1ff,
+            #0094ff,
+            #007fff,
+            #0070ff,
+            #8dd8ff,
+            #5ed0ff);
+      }
 
-            80% {
-                background-image: linear-gradient(to top,
-                        #00a1ff,
-                        #0094ff,
-                        #007fff,
-                        #0070ff,
-                        #8dd8ff,
-                        #5ed0ff,
-                        #00bbff
-                    );
-            }
+      80% {
+        background-image: linear-gradient(to top,
+            #00a1ff,
+            #0094ff,
+            #007fff,
+            #0070ff,
+            #8dd8ff,
+            #5ed0ff,
+            #00bbff);
+      }
 
-            100% {
-                background-image: linear-gradient(to top,
-                        #0094ff,
-                        #007fff,
-                        #0070ff,
-                        #8dd8ff,
-                        #5ed0ff,
-                        #00bbff,
-                        #00a1ff
-                    );
-            }
-        }
-    </style>
+      100% {
+        background-image: linear-gradient(to top,
+            #0094ff,
+            #007fff,
+            #0070ff,
+            #8dd8ff,
+            #5ed0ff,
+            #00bbff,
+            #00a1ff);
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="display">
-        <div class="celular">
-            <div class="borda">
-                <div class="camera">
-                    <div class="camera2"></div>
-                </div>
-                <div class="tela">
-                    <div class="direita">
-                        <i class="fa-solid fa-wifi"></i>
-                        <i class="fa-solid fa-signal"></i>
-                        <p>83%</p>
-                        <i class="fa-solid fa-battery-three-quarters"></i>
-                    </div>
-                    <i class="fa-solid fa-lock"
-                        style="width: 100%;text-align: center; color: white;margin-top: 15px;"></i>
-                    <div class="horario">11:59</div>
-                    <div class="data">sáb., 11 de maio</div>
-                    <div class="notificacao">
-                        <i class="fa-brands fa-whatsapp"
-                            style="background-color: #008769; padding: 5px 6px; border-radius: 50px"></i>
-                        <div class="mensagem">
-                            <div class="app">
-                                <p style="font-weight: 400;">WhatsApp</p>
-                                <p style="font-size: 10px;color: #aaaaaa;">12:00</p>
-                            </div>
-                            <p>Nova mensagem: 1</p>
-                        </div>
-                    </div>
-                    <div class="icones">
-                        <div class="icone">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div style="font-size: 30px; color: white; margin-bottom: 55px;">
-                            <i class="fa-solid fa-fingerprint"></i>
-                        </div>
-                        <div class="icone">
-                            <i class="fa-solid fa-camera"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="display">
+    <div class="celular">
+      <div class="borda">
+        <div class="camera">
+          <div class="camera2"></div>
         </div>
+        <div class="tela">
+          <div class="direita">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-signal"></i>
+            <p>83%</p>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+          </div>
+          <i class="fa-solid fa-lock" style="width: 100%;text-align: center; color: white;margin-top: 15px;"></i>
+          <div class="horario">11:59</div>
+          <div class="data">sáb., 11 de maio</div>
+          <div class="notificacao">
+            <i class="fa-brands fa-whatsapp" style="background-color: #008769; padding: 5px 6px; border-radius: 50px"></i>
+            <div class="mensagem">
+              <div class="app">
+                <p style="font-weight: 400;">WhatsApp</p>
+                <p style="font-size: 10px;color: #aaaaaa;">12:00</p>
+              </div>
+              <p>Nova mensagem: 1</p>
+            </div>
+          </div>
+          <div class="icones">
+            <div class="icone">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div style="font-size: 30px; color: white; margin-bottom: 55px;">
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <div class="icone">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script>
-        setTimeout(function () {
-            document.querySelector('.horario').textContent = "12:00";
-        }, 2000);
-        setTimeout(function () {
-            document.querySelector('.notificacao').style.display = 'flex';
-            document.querySelector('.icones').style.marginTop = '177px';
-        }, 6000);
-        setTimeout(function () {
-            document.querySelector('.celular').style.animation = 'vibrar 1s infinite';
-            document.querySelector('.borda').style.animation = 'animacaoBorda 3s linear infinite';
-        }, 6200);
-    </script>
+  <script>
+    function startAnimationLoop() {
+      // Reset the animations and styles
+      document.querySelector('.horario').textContent = "11:59";
+      document.querySelector('.celular').style.animation = 'none';
+      document.querySelector('.borda').style.animation = 'none';
+      document.querySelector('.notificacao').style.display = 'none';
+      document.querySelector('.icones').style.marginTop = '249px';
+      // Trigger reflow to restart animations
+      void document.querySelector('.celular').offsetWidth;
+      void document.querySelector('.borda').offsetWidth;
+      // Start the animation and style changes
+      setTimeout(function() {
+        document.querySelector('.horario').textContent = "12:00";
+      }, 2000);
+      setTimeout(function() {
+        document.querySelector('.notificacao').style.display = 'flex';
+        document.querySelector('.icones').style.marginTop = '177px';
+      }, 6000);
+      setTimeout(function() {
+        document.querySelector('.celular').style.animation = 'vibrar 1s infinite';
+        document.querySelector('.borda').style.animation = 'animacaoBorda 3s linear infinite';
+      }, 6200);
+    }
+    setInterval(startAnimationLoop, 12500 + 1000);
+    startAnimationLoop();
+  </script>
 </body>
 
 </html>
