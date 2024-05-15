@@ -30,6 +30,11 @@ A animação apresenta um celular que exibe a passagem do tempo, seguido pela ex
   
 ### 👾 Resultado:
 
+<div align="center">
+  
+  ![Celular](https://github.com/liviaportela/Animacao-Celular/assets/115835353/4fad3b82-9227-43ca-a777-cc3c1ef91518)
+
+</div>
 
 </div>
 
